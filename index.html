@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chenghao Li — VR Producer / Unreal Engineer</title>
+  <meta name="description" content="Portfolio of Chenghao Li — VR Producer / Lead Engineer and Unreal Engine Developer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a class="brand__name" href="#">Chenghao Li</a>
+      <span class="pill">VR Producer · Unreal Engine · Quest</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card">
+      <div class="hero__left">
+        <div class="kicker"><span class="dot"></span><span>Producer / Lead Engineer · Unreal Engine Developer</span></div>
+        <h1>Building comfort-first VR experiences with strong engineering execution.</h1>
+        <p class="muted">
+          I lead small VR teams end-to-end: roadmap, scope, milestones, and delivery — and I also implement core UE systems,
+          multiplayer, performance optimization, and shaders.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">Ylem Studio / Hustle</a>
+          <a class="btn" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:ash.morgan.le@gmail.com">Email</a>
+          <a class="btn" href="tel:+15412862464">Call</a>
+          <!-- Optional: upload resume.pdf into repo root and uncomment -->
+          <!-- <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a> -->
+        </div>
+
+        <div class="split small muted">
+          <span>Based in Corvallis, OR · Open to remote / hybrid</span>
+          <span>Unreal · C++ · VR · Quest · Shaders · Systems</span>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <figure class="profile">
+          <img src="assets/profile.jpg" alt="Profile photo" />
+          <figcaption class="muted small">
+            Replace <code>assets/profile.jpg</code> with your photo (recommended: 600×600).
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Projects</h2>
+        <div class="section__tools">
+          <input id="projectSearch" class="input" type="search" placeholder="Search projects…" />
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card project" data-tags="hustle vr unreal quest producer">
+          <div class="project__media">
+            <video controls playsinline preload="metadata" poster="assets/hustle_poster.jpg">
+              <source src="assets/hustle_trailer.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="project__body">
+            <h3>Hustle (VR) — Ylem Studio</h3>
+            <p class="muted">Producer / Lead Engineer · Quest-focused VR puzzle-adventure</p>
+            <ul>
+              <li>Roadmap ownership: scope, milestones, delivery coordination for a small VR team.</li>
+              <li>Core systems implementation + cross-discipline collaboration with art/engineering/design.</li>
+              <li>Agile/Jira operations to keep delivery predictable and unblock fast.</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">Website</a>
+              <a class="btn small" href="#" data-toast="Add your GitHub repo link here">Code</a>
+            </div>
+            <div class="tags">
+              <span class="tag">Unreal</span><span class="tag">VR</span><span class="tag">Quest</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="x8 vr unreal multiplayer quest">
+          <div class="project__media">
+            <img src="assets/x8.jpg" alt="X8 screenshot" />
+          </div>
+          <div class="project__body">
+            <h3>X8 (VR) — Published</h3>
+            <p class="muted">Unreal Engine Developer · Multiplayer · Quest optimization</p>
+            <ul>
+              <li>Gameplay implementation in Unreal Engine in collaboration with artists.</li>
+              <li>Multiplayer bug fixing and Oculus Quest performance optimization.</li>
+              <li>VFX integration and iteration support.</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="https://www.meta.com/experiences/4518172508241377/" target="_blank" rel="noreferrer">Meta Store</a>
+              <a class="btn small" href="#" data-toast="Add trailer/demo link here">Trailer</a>
+            </div>
+            <div class="tags">
+              <span class="tag">Unreal</span><span class="tag">VR</span><span class="tag">Multiplayer</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="research vr mobile unreal training">
+          <div class="project__media">
+            <img src="assets/navy.jpg" alt="Aircraft carrier simulation screenshot" />
+          </div>
+          <div class="project__body">
+            <h3>US Navy Aircraft Carrier Simulation</h3>
+            <p class="muted">VR / Mobile · Multi-user training application</p>
+            <ul>
+              <li>Built multi-user VR training flows and optimized for deployment constraints.</li>
+              <li>Worked with non-technical stakeholders with iterative Agile delivery.</li>
+              <li>Ported to mobile and optimized for iOS and Android.</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="#" data-toast="Add case study link here">Case Study</a>
+            </div>
+            <div class="tags">
+              <span class="tag">VR</span><span class="tag">Mobile</span><span class="tag">Training</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="graphics opencl opengl particles gpu">
+          <div class="project__media">
+            <img src="assets/particles.jpg" alt="Particle system screenshot" />
+          </div>
+          <div class="project__body">
+            <h3>OpenCL/OpenGL Particle System</h3>
+            <p class="muted">GPU simulation · OpenGL buffers + OpenCL compute</p>
+            <ul>
+              <li>GPU particle simulation using OpenGL buffers for position/color + OpenCL kernels for compute.</li>
+              <li>Kernel advances particle velocities and integrates motion per timestep.</li>
+            </ul>
+            <div class="links">
+              <a class="btn small" href="#" data-toast="Add GitHub repo link here">Code</a>
+            </div>
+            <div class="tags">
+              <span class="tag">OpenGL</span><span class="tag">OpenCL</span><span class="tag">Graphics</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="stack">
+        <div class="card item">
+          <div class="item__head">
+            <h3>Ylem Studio — Video Game Producer / Lead Engineer</h3>
+            <div class="meta muted">Feb 2025 – Present</div>
+          </div>
+          <ul>
+            <li>Roadmap ownership: scope, milestones, and delivery for a small VR team.</li>
+            <li>Built core systems and aligned cross-discipline execution with clear acceptance criteria.</li>
+            <li>Agile delivery leadership via Jira: backlog, ceremonies, risk tracking, and unblock support.</li>
+          </ul>
+        </div>
+
+        <div class="card item">
+          <div class="item__head">
+            <h3>Gamma Interactive — Unreal Engine Developer (Remote)</h3>
+            <div class="meta muted">Jul 2023 – Jan 2025</div>
+          </div>
+          <ul>
+            <li>Implemented gameplay with art collaboration; supported VFX integration and iteration.</li>
+            <li>Fixed multiplayer issues and optimized performance for Oculus Quest.</li>
+          </ul>
+        </div>
+
+        <div class="card item">
+          <div class="item__head">
+            <h3>NVIDIA Graphics & Image Technology Laboratory — Research Assistant</h3>
+            <div class="meta muted">May 2022 – Aug 2023</div>
+          </div>
+          <ul>
+            <li>Developed Unreal Engine 3D applications for VR education/training; deployed to Android and Windows.</li>
+            <li>Implemented 3D math models in C++/Blueprint; worked with GIS to build digital twin experiences.</li>
+            <li>Secured EDA funding (award #07-79-07914) after a successful demo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="tags">
+          <span class="tag">Unreal Engine</span>
+          <span class="tag">C++</span>
+          <span class="tag">VR / AR</span>
+          <span class="tag">Quest performance</span>
+          <span class="tag">Multiplayer</span>
+          <span class="tag">Shaders</span>
+          <span class="tag">Python</span>
+          <span class="tag">OpenGL</span>
+          <span class="tag">OpenCL</span>
+          <span class="tag">CUDA</span>
+          <span class="tag">GLSL</span>
+          <span class="tag">Agile / Jira</span>
+        </div>
+        <p class="muted">Tip: tailor this section to the job you’re applying for (Producer vs Unreal Engineer).</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card item">
+        <div class="item__head">
+          <h3>Oregon State University — B.S. Computer Science</h3>
+          <div class="meta muted">Sep 2019 – Jun 2023 · Major GPA: 3.65</div>
+        </div>
+        <p class="muted">Coursework: Computer Graphics & Shaders, Data Structures & Algorithms, OS, VR/AR, Parallel Programming</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="muted">Best ways to reach me:</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="mailto:ash.morgan.le@gmail.com">ash.morgan.le@gmail.com</a>
+          <a class="btn" href="tel:+15412862464">(541) 286-2464</a>
+          <a class="btn" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">Website</a>
+        </div>
+
+        <footer class="footer">
+          <div>© <span id="year"></span> Chenghao Li</div>
+          <div class="muted">Built with GitHub Pages</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+  <script src="main.js"></script>
+</body>
+</html>
