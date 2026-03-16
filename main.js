@@ -1,11 +1,19 @@
-// Small enhancements: year, project search, and a tiny toast for placeholder links.
+// Year, project search, toast, and responsive Menu toggle.
 (function () {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  const btn = document.getElementById("menuBtn");
+  const nav = document.getElementById("nav");
+  if (btn && nav) {
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+
   const toast = document.getElementById("toast");
   let toastTimer = null;
-
   function showToast(msg) {
     if (!toast) return;
     toast.textContent = msg;
@@ -13,7 +21,6 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => toast.classList.remove("show"), 1800);
   }
-
   document.addEventListener("click", (e) => {
     const a = e.target.closest("a[data-toast]");
     if (!a) return;
@@ -23,7 +30,6 @@
 
   const search = document.getElementById("projectSearch");
   const projects = Array.from(document.querySelectorAll(".project"));
-
   function applyFilter(q) {
     const needle = q.trim().toLowerCase();
     projects.forEach((card) => {
@@ -33,8 +39,5 @@
       card.style.display = hit ? "" : "none";
     });
   }
-
-  if (search) {
-    search.addEventListener("input", () => applyFilter(search.value));
-  }
+  if (search) search.addEventListener("input", () => applyFilter(search.value));
 })();

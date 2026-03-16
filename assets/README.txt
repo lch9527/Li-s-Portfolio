@@ -1,13 +1,18 @@
 Put your images/videos in this folder.
 
-Recommended filenames (already referenced by index.html):
-- profile.jpg          (square headshot, ~600x600)
-- hustle_trailer.mp4   (H.264 MP4 is safest for browsers)
-- hustle_poster.jpg    (poster image for the video, 1280x720)
-- x8.jpg               (project image, 1280x720)
-- navy.jpg             (project image, 1280x720)
-- particles.jpg        (project image, 1280x720)
+Main page expects:
+- hero.jpg
+- hustle.mp4 + hustle_poster.jpg
+- x8.mp4 + x8_poster.jpg
+- navy.mp4 + navy_poster.jpg
+- particles.mp4 + particles_poster.jpg
+
+Each project detail page also expects 3 images:
+- hustle_1.jpg hustle_2.jpg hustle_3.jpg
+- x8_1.jpg x8_2.jpg x8_3.jpg
+- navy_1.jpg navy_2.jpg navy_3.jpg
+- particles_1.jpg particles_2.jpg particles_3.jpg
 
 Tips:
-- Keep images < 1–2 MB each for fast loading.
-- For MP4, aim for < 30–60 MB if possible.
+- Use H.264 MP4 for best browser compatibility.
+- Keep filenames the same unless you also update the HTML.

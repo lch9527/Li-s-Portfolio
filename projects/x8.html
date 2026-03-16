@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>X8 (VR) — Chenghao Li</title>
+  <meta name="description" content="X8 (VR) project details." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="utility">
+    <div class="container utility__inner">
+      <div class="utility__left">
+        <a href="../index.html#projects">Projects</a><span class="sep">•</span>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <div class="utility__right">
+        <a href="mailto:ash.morgan.le@gmail.com">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">
+          <span class="logo__title">Chenghao Li</span>
+          <span class="logo__sub">VR Producer · Unreal Engineer</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#skills">Skills</a>
+        <a class="nav__cta" href="../index.html#contact">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container detail">
+    <div class="breadcrumbs">
+      <a href="../index.html#projects">← Back to Projects</a>
+    </div>
+
+    <div class="detail__head">
+      <div>
+        <h1 class="detail__title">X8 (VR)</h1>
+        <p class="detail__sub muted">Unreal Engine Developer · Published title</p>
+      </div>
+      <div>
+        <a class="btn btn--primary btn--sm" href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="detail__grid">
+      <section class="panel mediaBox">
+        <video controls playsinline preload="metadata" poster="../assets/x8_poster.jpg">
+          <source src="../assets/x8.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="panel__body">
+          <div class="kv">
+            <div class="row"><span class="key">Role</span><span class="val">[Add role]</span></div>
+            <div class="row"><span class="key">Platform</span><span class="val">[Quest / PCVR / Mobile]</span></div>
+            <div class="row"><span class="key">Tech</span><span class="val">[Unreal · C++ · ...]</span></div>
+            <div class="row"><span class="key">Links</span><span class="val"><a class="link" href="#" data-toast="Add a link here">Website/Store/GitHub</a></span></div>
+          </div>
+
+          <div class="textBlock">
+            <h4>Summary</h4>
+            <p>[Write a 3–6 sentence overview here. What is the project, what was the goal, and what did you deliver?]</p>
+          </div>
+
+          <div class="textBlock">
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>[Contribution 1]</li>
+              <li>[Contribution 2]</li>
+              <li>[Contribution 3]</li>
+            </ul>
+          </div>
+
+          <div class="textBlock">
+            <h4>What I’d do next</h4>
+            <ul>
+              <li>[Next improvement / roadmap item]</li>
+              <li>[Optimization / polish item]</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel__body">
+          <h3 style="margin:0 0 10px; font-family: var(--font-head); text-transform: uppercase; letter-spacing: .25px;">Images</h3>
+          <div class="gallery">
+            <img src="../assets/x8_1.jpg" alt="X8 (VR) image 1" />
+            <img src="../assets/x8_2.jpg" alt="X8 (VR) image 2" />
+            <img src="../assets/x8_3.jpg" alt="X8 (VR) image 3" />
+            <img src="../assets/x8_1.jpg" alt="X8 (VR) image 4 (duplicate placeholder)" />
+          </div>
+
+          <div class="textBlock" style="margin-top:12px">
+            <h4>Notes</h4>
+            <p>[Use this space for extra text: tools, constraints, production notes, metrics, etc.]</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer" style="margin-top: 22px;">
+      <div>© <span id="year"></span> Chenghao Li</div>
+      <div class="muted">Hosted on GitHub Pages</div>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+  <script src="../main.js"></script>
+</body>
+</html>
