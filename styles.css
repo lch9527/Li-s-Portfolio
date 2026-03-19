@@ -245,25 +245,88 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(0,0,0,.35); }
 }
 .toast.show{ opacity: 1; transform: translateX(-50%) translateY(-4px); }
 
-/* Simulation cover images: fill the whole media box without white bars */
-.card__media--simulation,
-#simulation .card__media,
-.projectGroup--simulation .card__media,
-.projectGroup[data-group="simulation"] .card__media {
+
+.projectGroup{ margin-top: 22px; }
+.projectGroup__head{ margin-bottom: 10px; }
+.projectGroup__title{ margin: 0; font-family: var(--font-head); text-transform: uppercase; letter-spacing: .28px; font-size: 18px; }
+.projectGroup__desc{ margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.cards--projects{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project--featured{ grid-column: 1 / -1; display:grid; grid-template-columns: 1.25fr .95fr; align-items:stretch; }
+.project--featured .card__media,
+.project--featured .card__media iframe{ height:100%; }
+.project--featured .card__media iframe{ aspect-ratio:auto; min-height:100%; }
+.card__media img{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+.gallery--mixed{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+.gallery img.gallery__portrait{ aspect-ratio: 3/4; object-fit: cover; }
+.gallery img.gallery__landscape{ aspect-ratio: 4/3; object-fit: cover; }
+@media (max-width: 920px){ .project--featured{ grid-template-columns: 1fr; } }
+
+/* Project grouping */
+.projectGroup{ margin-top: 22px; }
+.projectGroup__head{ margin-bottom: 8px; }
+.projectGroup__title{
+  margin: 0;
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  font-size: 20px;
+}
+.projectGroup__desc{ margin: 4px 0 0; color: var(--muted); }
+
+/* Project card media */
+.card__media{
+  position: relative;
+  width: 100%;
   aspect-ratio: 16 / 9;
-  min-height: 0;
   overflow: hidden;
   background: #111;
 }
-
-.card__media--simulation img,
-#simulation .card__media img,
-.projectGroup--simulation .card__media img,
-.projectGroup[data-group="simulation"] .card__media img {
+.card__media iframe,
+.card__media video,
+.card__media img{
   width: 100%;
   height: 100%;
-  aspect-ratio: auto;
+  display: block;
+  border: 0;
+}
+.card__media iframe,
+.card__media video,
+.card__media img{
+  object-fit: cover;
+}
+.card__media--wide,
+.card__media--featured{
+  aspect-ratio: 21 / 9;
+}
+
+/* Featured Hustle card */
+.cards--projects{ align-items: stretch; }
+.cards--projects > .project--featured{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
+  align-items: stretch;
+}
+.cards--projects > .project--featured .card__body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 920px){
+  .cards--projects > .project--featured{
+    grid-template-columns: 1fr;
+  }
+  .cards--projects > .project--featured .card__media{
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* Simulation cover images */
+.card__media--simulation{
+  aspect-ratio: 16 / 9;
+  background: #111;
+}
+.card__media--simulation img{
   object-fit: cover;
   object-position: center;
-  display: block;
 }
