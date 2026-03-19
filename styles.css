@@ -245,73 +245,25 @@ a:hover{ text-decoration: underline; text-decoration-color: rgba(0,0,0,.35); }
 }
 .toast.show{ opacity: 1; transform: translateX(-50%) translateY(-4px); }
 
-
-.projectGroup{ margin-top: 22px; }
-.projectGroup__head{ margin-bottom: 10px; }
-.projectGroup__title{ margin: 0; font-family: var(--font-head); text-transform: uppercase; letter-spacing: .28px; font-size: 18px; }
-.projectGroup__desc{ margin: 4px 0 0; color: var(--muted); font-size: 14px; }
-.cards--projects{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.project--featured{ grid-column: 1 / -1; display:grid; grid-template-columns: 1.25fr .95fr; align-items:stretch; }
-.project--featured .card__media,
-.project--featured .card__media iframe{ height:100%; }
-.project--featured .card__media iframe{ aspect-ratio:auto; min-height:100%; }
-.card__media img{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
-.gallery--mixed{ grid-template-columns: repeat(2, minmax(0,1fr)); }
-.gallery img.gallery__portrait{ aspect-ratio: 3/4; object-fit: cover; }
-.gallery img.gallery__landscape{ aspect-ratio: 4/3; object-fit: cover; }
-@media (max-width: 920px){ .project--featured{ grid-template-columns: 1fr; } }
-
-
-/* Robust project card layout fixes for GitHub Pages */
-.cards--projects{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items:stretch;
+/* Simulation cover images: fill the whole media box without white bars */
+.card__media--simulation,
+#simulation .card__media,
+.projectGroup--simulation .card__media,
+.projectGroup[data-group="simulation"] .card__media {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  overflow: hidden;
+  background: #111;
 }
-.cards--projects > .project--featured{
-  grid-column: 1 / -1;
+
+.card__media--simulation img,
+#simulation .card__media img,
+.projectGroup--simulation .card__media img,
+.projectGroup[data-group="simulation"] .card__media img {
   width: 100%;
-  display:grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(320px, .95fr);
-  align-items:stretch;
-}
-.project--featured .card__media--featured{
-  min-height: 340px;
-}
-.project--featured .card__media--featured iframe{
-  width:100%;
-  height:100%;
-  min-height:340px;
-  display:block;
-  border:0;
-}
-.card__media iframe{
-  width:100%;
-  aspect-ratio:16/9;
-  display:block;
-  border:0;
-}
-.card__media--simulation{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 14px;
-  min-height: 260px;
-  background:#f6f6f6;
-}
-.card__media--simulation img{
-  width:100%;
-  height:232px;
-  object-fit:contain;
-  object-position:center;
-  display:block;
-  background:#f6f6f6;
-}
-@media (max-width: 920px){
-  .cards--projects{ grid-template-columns: 1fr; }
-  .cards--projects > .project--featured{ grid-template-columns: 1fr; }
-  .project--featured .card__media--featured,
-  .project--featured .card__media--featured iframe{ min-height: 220px; }
-  .card__media--simulation{ min-height: 220px; }
-  .card__media--simulation img{ height: 190px; }
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
