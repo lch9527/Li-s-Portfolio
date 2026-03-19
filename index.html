@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chenghao Li — Portfolio</title>
   <meta name="description" content="Portfolio of Chenghao Li — VR Producer / Unreal Engineer." />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="utility">
     <div class="container utility__inner">
       <div class="utility__left">
-        <a href="#contact">Contact</a><span class="sep">•</span>
         <a href="#projects">Projects</a><span class="sep">•</span>
-        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a><span class="sep">•</span>
+        <a href="#contact">Contact</a>
       </div>
       <div class="utility__right">
         <a class="iconlink" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -31,7 +29,6 @@
   <header class="header" role="banner">
     <div class="container header__inner">
       <a class="logo" href="#">
-        <span class="logo__mark" aria-hidden="true"></span>
         <span class="logo__text">
           <span class="logo__title">Chenghao Li</span>
           <span class="logo__sub">VR Producer · Unreal Engineer</span>
@@ -42,7 +39,6 @@
 
       <nav class="nav" id="nav">
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a class="nav__cta" href="#contact">Get in touch</a>
@@ -58,15 +54,13 @@
       <div class="hero__content">
         <h1>Build VR that ships — with production discipline and Unreal engineering.</h1>
         <p>
-          I lead small teams end-to-end (scope, milestones, Jira execution) and also build the core Unreal systems:
-          VR interaction, performance for Quest, multiplayer fixes, and graphics/shaders.
+          I lead small teams end-to-end and also build the core Unreal systems: VR interaction,
+          Quest performance, multiplayer fixes, simulation workflows, and graphics/shaders.
         </p>
 
         <div class="hero__actions">
-          <a class="btn btn--primary" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">View Hustle</a>
+          <a class="btn btn--primary" href="projects/hustle.html">Featured Project</a>
           <a class="btn btn--ghost" href="mailto:ash.morgan.le@gmail.com">Email me</a>
-          <!-- Optional: upload resume.pdf into repo root and uncomment -->
-          <!-- <a class="btn btn--ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a> -->
         </div>
 
         <div class="hero__meta">
@@ -86,26 +80,23 @@
         </div>
       </div>
 
-      <div class="projectGroup">
-        <div class="projectGroup__head">
-          <h3 class="projectGroup__title">Game</h3>
-          <p class="projectGroup__desc">VR and interactive game projects.</p>
-        </div>
+      <div class="categoryBlock">
+        <h3 class="categoryTitle">Game</h3>
         <div class="cards cards--projects">
-          <article class="card project project--featured" data-tags="game hustle vr unreal quest producer trailer">
-            <div class="card__media card__media--wide card__media--featured">
+          <article class="card project project--featured" data-tags="hustle vr unreal quest producer lead engineer ylem studio">
+            <div class="card__media">
               <iframe src="https://www.youtube.com/embed/dAQE7rst24I" title="Hustle trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="card__body">
               <h3>Hustle (VR) — producer/lead engineer</h3>
-              <p class="muted">Producer / Lead Engineer · Quest-focused VR puzzle-adventure</p>
+              <p class="muted">VR puzzle-adventure · Quest-focused production and engineering leadership</p>
               <ul>
-                <li>Owned roadmap, scope, milestones, and cross-discipline execution for Ylem Studio’s flagship VR title.</li>
-                <li>Built core Unreal gameplay systems while driving iteration across design, art, and engineering.</li>
-                <li>Shaped a comfort-first standalone VR experience with performance-conscious implementation.</li>
+                <li>Leading roadmap, scope, milestone planning, and cross-discipline delivery.</li>
+                <li>Building core Unreal gameplay systems and supporting iteration across design, art, and engineering.</li>
+                <li>Driving comfort-first performance for standalone VR targets.</li>
               </ul>
-              <div class="card__links">
-                <a class="link" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">Website</a>
+              <div class="card__links card__links--big">
+                <a class="link" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">Ylem Studio</a>
               </div>
               <div class="card__cta">
                 <a class="btn btn--primary btn--sm" href="projects/hustle.html">Detail</a>
@@ -113,19 +104,19 @@
             </div>
           </article>
 
-          <article class="card project" data-tags="game x8 vr unreal multiplayer quest shipped">
+          <article class="card project" data-tags="x8 vr published unreal multiplayer quest generalist engineer">
             <div class="card__media">
-              <iframe src="https://www.youtube.com/embed/noOUTWMw_7E" title="X8 video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/noOUTWMw_7E" title="X8 trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="card__body">
               <h3>X8 (VR) — Generalist engineer.</h3>
-              <p class="muted">Generalist Engineer · Published multiplayer VR title</p>
+              <p class="muted">Published VR title · gameplay, multiplayer support, and Quest optimization</p>
               <ul>
-                <li>Implemented gameplay features in Unreal and collaborated closely with art and design.</li>
-                <li>Fixed multiplayer issues and optimized content for Meta Quest deployment.</li>
-                <li>Integrated VFX and supported rapid iteration on a shipped commercial title.</li>
+                <li>Implemented gameplay features and worked closely with art and design.</li>
+                <li>Resolved multiplayer issues and optimized performance for Oculus Quest.</li>
+                <li>Supported VFX integration and rapid iteration in production.</li>
               </ul>
-              <div class="card__links">
+              <div class="card__links card__links--big">
                 <a class="link" href="https://www.meta.com/experiences/4518172508241377/" target="_blank" rel="noreferrer">Meta Store</a>
               </div>
               <div class="card__cta">
@@ -134,17 +125,17 @@
             </div>
           </article>
 
-          <article class="card project" data-tags="game macht vr mobile training unreal multi-user youtube">
+          <article class="card project" data-tags="macht generalist engineer vr mobile simulation game">
             <div class="card__media">
               <iframe src="https://www.youtube.com/embed/a3f8eoB9dbw" title="Macht video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="card__body">
               <h3>Macht — Generalist engineer.</h3>
-              <p class="muted">Generalist Engineer · VR / mobile multi-user training experience</p>
+              <p class="muted">Interactive real-time project work across gameplay, integration, and production support</p>
               <ul>
-                <li>Built training flows covering deck operations, cargo-drop tasks, and F-35 workflow scenarios.</li>
-                <li>Iterated with non-technical stakeholders using Agile delivery and hands-on prototyping.</li>
-                <li>Adapted the experience for mobile hardware and platform constraints.</li>
+                <li>Worked as a generalist engineer across implementation and iteration needs.</li>
+                <li>Supported real-time content integration and technical problem solving.</li>
+                <li>Contributed to project delivery with production-aware engineering.</li>
               </ul>
               <div class="card__cta">
                 <a class="btn btn--primary btn--sm" href="projects/macht.html">Detail</a>
@@ -154,43 +145,30 @@
         </div>
       </div>
 
-      <div class="projectGroup">
-        <div class="projectGroup__head">
-          <h3 class="projectGroup__title">Simulation</h3>
-          <p class="projectGroup__desc">Training, simulation, and technical visualization work.</p>
-        </div>
-        <div class="cards cards--projects">
-          <article class="card project" data-tags="simulation navy aircraft carrier vr mobile training unreal">
-            <div class="card__media card__media--simulation">
-              <img src="assets/All_hands2.png" alt="US Navy Aircraft Carrier Simulation cover image" />
+      <div class="categoryBlock">
+        <h3 class="categoryTitle">Simulation</h3>
+        <div class="cards cards--projects cards--simulation">
+          <article class="card project" data-tags="navy aircraft carrier simulator vr mobile generalist engineer">
+            <div class="card__media card__media--image">
+              <img src="assets/All_hands2.png" alt="US Navy Aircraft Carrier simulator cover image" />
             </div>
             <div class="card__body">
-              <h3>US Navy Aircraft Carrier Simulation project (VR/mobile)</h3>
-              <p class="muted">Generalist Engineer · immersive training and simulation system</p>
-              <ul>
-                <li>Built interactive VR/mobile training content for aircraft carrier operations and team workflows.</li>
-                <li>Worked across engineering needs as a generalist, supporting interaction, content integration, and iteration.</li>
-                <li>Designed for clear communication of procedures in a simulation-first format.</li>
-              </ul>
+              <h3>US Navy Aircraft Carrier simulator (VR/mobile) - Generalist engineer.</h3>
+              <p class="muted">Multi-user immersive training and deployment across VR and mobile</p>
               <div class="card__cta">
                 <a class="btn btn--primary btn--sm" href="projects/navy.html">Detail</a>
               </div>
             </div>
           </article>
 
-          <article class="card project" data-tags="simulation forest vr interactive visualization smart forestry">
-            <div class="card__media card__media--simulation">
+          <article class="card project" data-tags="interactive vr forest simulation producer lead engineer generalist engineer forestry">
+            <div class="card__media card__media--image">
               <img src="assets/Forested1.png" alt="Interactive VR forest simulation system cover image" />
             </div>
             <div class="card__body">
-              <h3>Interactive VR forest simulation system</h3>
-              <p class="muted">Generalist Engineer · immersive forestry visualization and education</p>
-              <ul>
-                <li>Supported an interactive VR simulation system focused on forest restoration and mass timber storytelling.</li>
-                <li>Worked as a generalist engineer across technical implementation and experience development.</li>
-                <li>Connected simulation content to a real-world smart forestry initiative.</li>
-              </ul>
-              <div class="card__links">
+              <h3>Interactive VR forest simulation system — producer/lead engineer</h3>
+              <p class="muted">Immersive simulation and educational visualization for forestry workflows</p>
+              <div class="card__links card__links--big">
                 <a class="link" href="https://www.masstimbercoalition.org/projects/smart-forestry-paving-the-way-from-forest-restoration-to-mass-timber" target="_blank" rel="noreferrer">Project Link</a>
               </div>
               <div class="card__cta">
@@ -201,75 +179,33 @@
         </div>
       </div>
 
-      <div class="projectGroup">
-        <div class="projectGroup__head">
-          <h3 class="projectGroup__title">Computer Graphic</h3>
-          <p class="projectGroup__desc">Rendering, GPU compute, and graphics programming experiments.</p>
-        </div>
-        <div class="cards cards--projects">
-          <article class="card project" data-tags="computer graphic graphics opencl opengl particles gpu simulation">
-            <div class="card__media">
-              <video controls playsinline preload="metadata" poster="assets/particles_poster.jpg">
-                <source src="assets/particles.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="card__body">
-              <h3>OpenCL/OpenGL Particle System</h3>
-              <p class="muted">GPU simulation · OpenGL buffers + OpenCL compute</p>
-              <ul>
-                <li>OpenGL buffers for position/color; OpenCL kernel for compute updates.</li>
-                <li>Kernel advances velocity and integrates motion per timestep.</li>
-              </ul>
-              <div class="card__links">
-                <a class="link" href="#" data-toast="Add GitHub repo link here">Code</a>
-              </div>
-              <div class="card__cta">
-                <a class="btn btn--primary btn--sm" href="projects/particles.html">Detail</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <h2 class="section__title">Experience</h2>
-
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="timeline__when">Feb 2025 – Present</div>
-          <div class="timeline__what">
-            <h3>Ylem Studio — Video Game Producer / Lead Engineer</h3>
-            <ul>
-              <li>Roadmap ownership: scope, milestones, and delivery for a small VR team.</li>
-              <li>Built core systems and aligned cross-discipline execution with clear acceptance criteria.</li>
-              <li>Agile leadership via Jira: backlog, ceremonies, risk tracking, unblock support.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__when">Jul 2023 – Jan 2025</div>
-          <div class="timeline__what">
-            <h3>Gamma Interactive — Unreal Engine Developer (Remote)</h3>
-            <ul>
-              <li>Implemented gameplay with art collaboration; supported VFX integration and iteration.</li>
-              <li>Fixed multiplayer issues and optimized performance for Oculus Quest.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__when">May 2022 – Aug 2023</div>
-          <div class="timeline__what">
-            <h3>NVIDIA Graphics & Image Technology Laboratory — Research Assistant</h3>
-            <ul>
-              <li>Developed Unreal Engine apps for VR education/training; deployed to Android and Windows.</li>
-              <li>Implemented 3D math models in C++/Blueprint; worked with GIS for digital twins.</li>
-              <li>Secured EDA funding (award #07-79-07914) after successful demo.</li>
-            </ul>
-          </div>
+      <div class="categoryBlock">
+        <h3 class="categoryTitle">Computer Graphic</h3>
+        <div class="cards cards--graphics">
+          <a class="miniCard" href="https://www.youtube.com/watch?v=iOaC6tPG8SM&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=3" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 01</span>
+            <span class="miniCard__title">Computer Graphic Study 01</span>
+          </a>
+          <a class="miniCard" href="https://www.youtube.com/watch?v=aloH_eonRyI&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=4" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 02</span>
+            <span class="miniCard__title">Computer Graphic Study 02</span>
+          </a>
+          <a class="miniCard" href="https://www.youtube.com/watch?v=S7h0IPWfwfg&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=5" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 03</span>
+            <span class="miniCard__title">Computer Graphic Study 03</span>
+          </a>
+          <a class="miniCard" href="https://www.youtube.com/watch?v=ksSMCSwCHaI&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=6" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 04</span>
+            <span class="miniCard__title">Computer Graphic Study 04</span>
+          </a>
+          <a class="miniCard" href="https://www.youtube.com/watch?v=5_18EQELMe8&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=7" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 05</span>
+            <span class="miniCard__title">Computer Graphic Study 05</span>
+          </a>
+          <a class="miniCard" href="https://www.youtube.com/watch?v=Zi1btEQ_fYA&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=8" target="_blank" rel="noreferrer">
+            <span class="miniCard__thumb">Video 06</span>
+            <span class="miniCard__title">Computer Graphic Study 06</span>
+          </a>
         </div>
       </div>
     </section>
@@ -277,16 +213,15 @@
     <section id="skills" class="section">
       <h2 class="section__title">Skills</h2>
       <div class="tagrow">
-        <span class="tag">Unreal Engine</span>
+        <span class="tag">Unreal Engine 5</span>
         <span class="tag">C++</span>
-        <span class="tag">VR / AR</span>
-        <span class="tag">Quest optimization</span>
-        <span class="tag">Multiplayer</span>
-        <span class="tag">Shaders</span>
-        <span class="tag">OpenGL</span>
-        <span class="tag">OpenCL</span>
-        <span class="tag">CUDA</span>
-        <span class="tag">Agile / Jira</span>
+        <span class="tag">Blueprints</span>
+        <span class="tag">VR Interaction</span>
+        <span class="tag">Quest Optimization</span>
+        <span class="tag">Shaders / Graphics</span>
+        <span class="tag">Jira / Agile</span>
+        <span class="tag">Multiplayer Debugging</span>
+        <span class="tag">OpenGL / OpenCL</span>
       </div>
     </section>
 
@@ -294,8 +229,7 @@
       <h2 class="section__title">Education</h2>
       <div class="edu">
         <h3>Oregon State University — B.S. Computer Science</h3>
-        <p class="muted">Sep 2019 – Jun 2023 · Major GPA: 3.65</p>
-        <p class="muted">Coursework: Computer Graphics & Shaders, Data Structures & Algorithms, OS, VR/AR, Parallel Programming</p>
+        <p class="muted">Coursework: Computer Graphics &amp; Shaders, Data Structures &amp; Algorithms, OS, VR/AR, Parallel Programming</p>
       </div>
     </section>
 
@@ -303,15 +237,14 @@
       <h2 class="section__title">Contact</h2>
       <div class="contact">
         <a class="btn btn--primary" href="mailto:ash.morgan.le@gmail.com">ash.morgan.le@gmail.com</a>
-        <a class="btn btn--ghost" href="tel:+15412862464">(541) 286-2464</a>
-        <a class="btn btn--ghost" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn btn--ghost" href="https://www.ylemstudio.com/" target="_blank" rel="noreferrer">ylemstudio.com</a>
+        <a class="btn btn--ghost btn--dark" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
-      <footer class="footer">
-        <div>© <span id="year"></span> Chenghao Li</div>
-        <div class="muted">Hosted on GitHub Pages</div>
-      </footer>
     </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Chenghao Li</div>
+      <div class="muted">Hosted on GitHub Pages</div>
+    </footer>
   </main>
 
   <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
