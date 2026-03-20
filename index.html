@@ -5,47 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chenghao Li — Portfolio</title>
   <meta name="description" content="Portfolio of Chenghao Li — VR Producer / Unreal Engineer." />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="utility">
-    <div class="container utility__inner">
-      <div class="utility__left">
-        <a href="#contact">Contact</a><span class="sep">•</span>
-        <a href="#projects">Projects</a><span class="sep">•</span>
-        <a href="#experience">Experience</a>
+  <header class="siteHeader">
+    <div class="container siteHeader__inner">
+      <div class="siteHeader__brand">
+        <h1>Chenghao Li</h1>
+        <p>VR Producer · Unreal Engineer</p>
       </div>
-      <div class="utility__right">
-        <a class="iconlink" href="https://www.linkedin.com/in/chenghao-li-lch9527/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <span class="sep">•</span>
-        <a class="iconlink" href="mailto:ash.morgan.le@gmail.com">Email</a>
-      </div>
-    </div>
-  </div>
-
-  <header class="header" role="banner">
-    <div class="container header__inner">
-      <a class="logo" href="#">
-        <span class="logo__mark" aria-hidden="true"></span>
-        <span class="logo__text">
-          <span class="logo__title">Chenghao Li</span>
-          <span class="logo__sub">VR Producer · Unreal Engineer</span>
-        </span>
-      </a>
-
-      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
-
-      <nav class="nav" id="nav">
+      <nav class="siteNav">
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
-        <a class="nav__cta" href="#contact">Get in touch</a>
       </nav>
     </div>
   </header>
@@ -62,10 +37,10 @@
         </div>
 
         <div class="hero__meta hero__meta--compact">
-          <div><strong>Location:</strong> Corvallis, OR (open to remote/hybrid)</div>
+          <div><strong>Location:</strong> Corvallis, OR (open to relocated)</div>
         </div>
 
-        <div class="hero__skillsWrap">
+        <div class="hero__skillsWrap" id="skills">
           <h2 class="hero__skillsTitle">Skills</h2>
           <div class="hero__skills">
             <span class="hero__skill">Unreal Engine 5</span>
@@ -99,7 +74,7 @@
         </div>
         <div class="cards cards--projects">
           <article class="card project project--featured" data-tags="game hustle vr unreal quest producer trailer">
-            <div class="card__media card__media--wide">
+            <div class="card__media">
               <iframe src="https://www.youtube.com/embed/dAQE7rst24I" title="Hustle trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="card__body">
@@ -152,8 +127,11 @@
                 <li>Iterated with non-technical stakeholders using Agile delivery and hands-on prototyping.</li>
                 <li>Adapted the experience for mobile hardware and platform constraints.</li>
               </ul>
+              <div class="card__links">
+                <a class="link" href="https://playmacht.com/" target="_blank" rel="noreferrer">Website</a>
+              </div>
               <div class="card__cta">
-                <a class="btn btn--primary btn--sm" href="projects/navy.html">Detail</a>
+                <a class="btn btn--primary btn--sm" href="projects/macht.html">Detail</a>
               </div>
             </div>
           </article>
@@ -166,16 +144,16 @@
           <p class="projectGroup__desc">Training, simulation, and technical visualization work.</p>
         </div>
         <div class="cards cards--projects">
-          <article class="card project" data-tags="simulation navy aircraft carrier vr mobile training unreal">
+          <article class="card project project--simulation" data-tags="simulation navy aircraft carrier vr mobile training unreal">
             <div class="card__media">
-              <img src="assets/All_hands2.png" alt="US Navy Aircraft Carrier Simulation cover image" />
+              <img src="assets/All_hands2.png" alt="US Navy Aircraft Carrier simulator cover image" />
             </div>
             <div class="card__body">
-              <h3>US Navy Aircraft Carrier Simulation project (VR/mobile)</h3>
-              <p class="muted">Generalist Engineer · immersive training and simulation system</p>
+              <h3>US Navy Aircraft Carrier simulator (VR/mobile) - Generalist engineer.</h3>
+              <p class="muted">Immersive training and simulation system</p>
               <ul>
                 <li>Built interactive VR/mobile training content for aircraft carrier operations and team workflows.</li>
-                <li>Worked across engineering needs as a generalist, supporting interaction, content integration, and iteration.</li>
+                <li>Worked across interaction systems, content integration, and iteration as a generalist engineer.</li>
                 <li>Designed for clear communication of procedures in a simulation-first format.</li>
               </ul>
               <div class="card__cta">
@@ -184,16 +162,16 @@
             </div>
           </article>
 
-          <article class="card project" data-tags="simulation forest vr interactive visualization smart forestry">
+          <article class="card project project--simulation" data-tags="simulation forest vr interactive visualization smart forestry">
             <div class="card__media">
               <img src="assets/Forested1.png" alt="Interactive VR forest simulation system cover image" />
             </div>
             <div class="card__body">
-              <h3>Interactive VR forest simulation system</h3>
-              <p class="muted">Generalist Engineer · immersive forestry visualization and education</p>
+              <h3>Interactive VR forest simulation system — producer/lead engineer</h3>
+              <p class="muted">Immersive forestry visualization and education</p>
               <ul>
-                <li>Supported an interactive VR simulation system focused on forest restoration and mass timber storytelling.</li>
-                <li>Worked as a generalist engineer across technical implementation and experience development.</li>
+                <li>Led and supported an interactive VR simulation system focused on forest restoration and mass timber storytelling.</li>
+                <li>Worked across technical implementation, production, and experience development.</li>
                 <li>Connected simulation content to a real-world smart forestry initiative.</li>
               </ul>
               <div class="card__links">
@@ -210,103 +188,46 @@
       <div class="projectGroup">
         <div class="projectGroup__head">
           <h3 class="projectGroup__title">Computer Graphic</h3>
-          <p class="projectGroup__desc">Rendering, GPU compute, and graphics programming experiments.</p>
+          <p class="projectGroup__desc">Rendering, GPU compute, and graphics programming studies.</p>
         </div>
-        <div class="cards cards--projects">
-          <article class="card project" data-tags="computer graphic graphics opencl opengl particles gpu simulation">
-            <div class="card__media">
-              <video controls playsinline preload="metadata" poster="assets/particles_poster.jpg">
-                <source src="assets/particles.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="card__body">
-              <h3>OpenCL/OpenGL Particle System</h3>
-              <p class="muted">GPU simulation · OpenGL buffers + OpenCL compute</p>
-              <ul>
-                <li>OpenGL buffers for position/color; OpenCL kernel for compute updates.</li>
-                <li>Kernel advances velocity and integrates motion per timestep.</li>
-              </ul>
-              <div class="card__links">
-                <a class="link" href="#" data-toast="Add GitHub repo link here">Code</a>
-              </div>
-              <div class="card__cta">
-                <a class="btn btn--primary btn--sm" href="projects/particles.html">Detail</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <h2 class="section__title">Experience</h2>
-
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="timeline__when">Feb 2025 – Present</div>
-          <div class="timeline__what">
-            <h3>Ylem Studio — Video Game Producer / Lead Engineer</h3>
-            <ul>
-              <li>Roadmap ownership: scope, milestones, and delivery for a small VR team.</li>
-              <li>Built core systems and aligned cross-discipline execution with clear acceptance criteria.</li>
-              <li>Agile leadership via Jira: backlog, ceremonies, risk tracking, unblock support.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__when">Jul 2023 – Jan 2025</div>
-          <div class="timeline__what">
-            <h3>Gamma Interactive — Unreal Engine Developer (Remote)</h3>
-            <ul>
-              <li>Implemented gameplay with art collaboration; supported VFX integration and iteration.</li>
-              <li>Fixed multiplayer issues and optimized performance for Oculus Quest.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__when">May 2022 – Aug 2023</div>
-          <div class="timeline__what">
-            <h3>NVIDIA Graphics & Image Technology Laboratory — Research Assistant</h3>
-            <ul>
-              <li>Developed Unreal Engine apps for VR education/training; deployed to Android and Windows.</li>
-              <li>Implemented 3D math models in C++/Blueprint; worked with GIS for digital twins.</li>
-              <li>Secured EDA funding (award #07-79-07914) after successful demo.</li>
-            </ul>
-          </div>
+        <div class="cards cards--cg">
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=iOaC6tPG8SM&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=3" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/iOaC6tPG8SM/hqdefault.jpg" alt="OpenCL/OpenGL Particle System Demo thumbnail" /></div>
+            <div class="card__body"><h3>OpenCL/OpenGL Particle System Demo</h3></div>
+          </a>
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=aloH_eonRyI&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=4" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/aloH_eonRyI/hqdefault.jpg" alt="Cube Mapping thumbnail" /></div>
+            <div class="card__body"><h3>Cube Mapping</h3></div>
+          </a>
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=S7h0IPWfwfg&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=5" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/S7h0IPWfwfg/hqdefault.jpg" alt="Tessellation Shaders thumbnail" /></div>
+            <div class="card__body"><h3>Tessellation Shaders</h3></div>
+          </a>
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=ksSMCSwCHaI&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=6" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/ksSMCSwCHaI/hqdefault.jpg" alt="Fragment Shader thumbnail" /></div>
+            <div class="card__body"><h3>Fragment Shader</h3></div>
+          </a>
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=5_18EQELMe8&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=7" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/5_18EQELMe8/hqdefault.jpg" alt="Mesh Of Springs Physics thumbnail" /></div>
+            <div class="card__body"><h3>Mesh Of Springs physic</h3></div>
+          </a>
+          <a class="card cgCard" href="https://www.youtube.com/watch?v=Zi1btEQ_fYA&list=PLngfIC9sk0AeKWDF8yO30kBgFdPRiowDH&index=8" target="_blank" rel="noreferrer">
+            <div class="card__media"><img src="https://img.youtube.com/vi/Zi1btEQ_fYA/hqdefault.jpg" alt="OpenGL Key Frames animation thumbnail" /></div>
+            <div class="card__body"><h3>OpenGL Key Frames animation</h3></div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <h2 class="section__title">Skills</h2>
-      <div class="tagrow">
-        <span class="tag">Unreal Engine</span>
-        <span class="tag">C++</span>
-        <span class="tag">VR / AR</span>
-        <span class="tag">Quest optimization</span>
-        <span class="tag">Multiplayer</span>
-        <span class="tag">Shaders</span>
-        <span class="tag">OpenGL</span>
-        <span class="tag">OpenCL</span>
-        <span class="tag">CUDA</span>
-        <span class="tag">Agile / Jira</span>
-      </div>
-    </section>
-
-    <section id="education" class="section">
+    <section id="education" class="section section--bottom">
       <h2 class="section__title">Education</h2>
       <div class="edu">
-        <h3>Oregon State University — B.S. Computer Science</h3>
-        <p class="muted">Sep 2019 – Jun 2023 · Major GPA: 3.65</p>
-        <p class="muted">Coursework: Computer Graphics & Shaders, Data Structures & Algorithms, OS, VR/AR, Parallel Programming</p>
+        <h3>Oregon State University — B.S. in Computer Science</h3>
+        <p class="muted">Coursework: Computer Graphics &amp; Shaders, Data Structures &amp; Algorithms, OS, VR/AR, Parallel Programming</p>
       </div>
     </section>
   </main>
 
-  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
   <script src="main.js"></script>
 </body>
 </html>
