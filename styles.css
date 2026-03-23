@@ -244,3 +244,13 @@ img,iframe,video{display:block;max-width:100%}
   .projectGroup__title{font-size:24px}
   .card h3{font-size:20px}
 }
+
+
+/* Detail page cleanup */
+.detail__head{align-items:flex-end}
+.detail__head > h1, .detail__head > p{margin:0}
+.mediaBox{background:#fff}
+.mediaBox iframe,.mediaBox video,.mediaBox img{display:block;width:100%;min-height:360px;height:360px}
+.textBlock--underMedia{margin:0;border-radius:0;border-left:0;border-top:1px solid var(--border);background:#fafafa;padding:16px 18px}
+.textBlock--underMedia h4{font-size:20px}
+@media (max-width: 920px){.mediaBox iframe,.mediaBox video,.mediaBox img{height:300px;min-height:300px}}
