@@ -40,4 +40,11 @@
     });
   }
   if (search) search.addEventListener("input", () => applyFilter(search.value));
+
+  const videoPreview = document.querySelector("[data-video-card] [data-play-video]");
+  if (videoPreview) {
+    videoPreview.addEventListener("click", () => {
+      if (videoPreview.paused) videoPreview.play().catch(() => {});
+    });
+  }
 })();
